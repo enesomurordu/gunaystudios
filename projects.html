@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulamalar ve Projeler - Portfolyo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { darkBg: '#121212', cardBg: '#1e1e1e', accent: '#3b82f6' } } } }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-darkBg text-gray-100 font-sans antialiased">
+
+    <!-- Navbar (Aynı kalacak) -->
+    <nav class="sticky top-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-white"><i
+                    class="fa-solid fa-code text-accent mr-2"></i>Portfolyo<span class="text-accent">.</span></a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-400 hover:text-white transition">Ana Sayfa</a>
+                <a href="projects.html" class="text-accent font-medium transition">Uygulamalar</a>
+                <a href="about.html" class="text-gray-400 hover:text-white transition">Hakkımda</a>
+                <a href="donate.html"
+                    class="bg-accent/10 text-accent border border-accent/20 px-4 py-2 rounded-lg font-medium hover:bg-accent hover:text-white transition flex items-center gap-2"><i
+                        class="fa-solid fa-mug-hot"></i> Bağış Yap</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- İçerik -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="mb-12">
+            <h1 class="text-3xl font-extrabold text-white mb-2">Yazdığım Uygulamalar</h1>
+            <p class="text-gray-400">Geliştirdiğim tüm masaüstü, mobil ve web projelerini buradan indirebilir ve
+                inceleyebilirsin.</p>
+        </div>
+
+        <!-- Proje Kartları Grid Yapısı -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Proje Kartı 1 Örneği -->
+            <div
+                class="bg-cardBg border border-gray-800 rounded-2xl p-6 flex flex-col justify-between hover:border-gray-700 transition">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent text-xl">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <span
+                            class="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Masaüstü</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Uygulama Adı 1</h3>
+                    <p class="text-gray-400 text-sm mb-6">Python ve CustomTkinter ile geliştirilmiş, dosya düzenleme ve
+                        yönetim otomasyon aracı.</p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-gray-800">
+                    <a href="https://github.com/enesomurordu/VaultGuard/releases/download/1.0.0/main.py"
+                        class="flex-1 bg-accent hover:bg-blue-600 text-white text-center py-2.5 rounded-xl text-sm font-medium transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-download"></i> İndir (.exe)
+                    </a>
+                    <a href="#" class="p-2.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-xl transition"
+                        title="Kaynak Kod (GitHub)">
+                        <i class="fa-brands fa-github text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proje Kartı 2 Örneği (Mobil) -->
+            <div
+                class="bg-cardBg border border-gray-800 rounded-2xl p-6 flex flex-col justify-between hover:border-gray-700 transition">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-xl">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <span
+                            class="text-xs font-semibold px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Mobil</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Film Takip Uygulaması</h3>
+                    <p class="text-gray-400 text-sm mb-6">Flutter ve TMDB API entegrasyonu ile film/dizi listeleme ve
+                        favori yönetim uygulaması.</p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-gray-800">
+                    <a href="#"
+                        class="flex-1 bg-purple-600 hover:bg-purple-700 text-white text-center py-2.5 rounded-xl text-sm font-medium transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-download"></i> İndir (.apk)
+                    </a>
+                    <a href="#" class="p-2.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-xl transition"
+                        title="Kaynak Kod (GitHub)">
+                        <i class="fa-brands fa-github text-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Yeni Uygulama Kartı Şablonu -->
+            <div
+                class="bg-cardBg border border-gray-800 rounded-2xl p-6 flex flex-col justify-between hover:border-gray-700 transition">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent text-xl">
+                            <i class="fa-solid fa-code"></i>
+                            <!-- Buradaki ikonu değiştirebilirsin (fa-desktop, fa-mobile-screen vb.) -->
+                        </div>
+                        <span
+                            class="text-xs font-semibold px-2.5 py-1 rounded-full bg-green-500/10 text-green-400 border border-green-500/20">Web
+                            / Diğer</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Uygulama Adı Buraya</h3>
+                    <p class="text-gray-400 text-sm mb-6">Uygulamanın ne işe yaradığını anlatan kısa ve öz açıklama cümlesi.</p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-gray-800">
+                    <a href="GITHUB_RELEASE_INDIRME_LINKI"
+                        class="flex-1 bg-accent hover:bg-blue-600 text-white text-center py-2.5 rounded-xl text-sm font-medium transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-download"></i> İndir (.exe)
+                    </a>
+                    <a href="GITHUB_REPO_LINKI" class="p-2.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-xl transition"
+                        title="Kaynak Kod (GitHub)">
+                        <i class="fa-brands fa-github text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-800 mt-20 py-8 text-center text-sm text-gray-500">
+        <p>&copy; 2026 - Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+
+</html>
