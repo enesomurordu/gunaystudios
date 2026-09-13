@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="tr" class="dark">
 
@@ -95,4 +96,103 @@
     </footer>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bağış Yap / Destek Ol - Portfolyo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { darkBg: '#121212', cardBg: '#1e1e1e', accent: '#3b82f6' } } } }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-darkBg text-gray-100 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-white"><i
+                    class="fa-solid fa-code text-accent mr-2"></i>Portfolyo<span class="text-accent">.</span></a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-400 hover:text-white transition">Ana Sayfa</a>
+                <a href="projects.html" class="text-gray-400 hover:text-white transition">Uygulamalar</a>
+                <a href="about.html" class="text-gray-400 hover:text-white transition">Hakkımda</a>
+                <a href="donate.html"
+                    class="bg-accent/10 text-accent border border-accent/20 px-4 py-2 rounded-lg font-medium hover:bg-accent hover:text-white transition flex items-center gap-2"><i
+                        class="fa-solid fa-mug-hot"></i> Bağış Yap</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- İçerik -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+        <div
+            class="w-16 h-16 bg-red-500/10 text-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl border border-red-500/20">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Projelerimi Destekle</h1>
+        <p class="text-gray-400 max-w-xl mx-auto mb-12">
+            Geliştirdiğim açık kaynaklı araçları ve uygulamaları ücretsiz sunmaya devam edebilmem için bana kahve
+            ısmarlayabilir veya bağışta bulunabilirsin. Desteğin için çok teşekkürler!
+        </p>
+
+        <!-- Destek Seçenekleri Kartları -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+
+            <!-- Buy Me a Coffee / Uluslararası -->
+            <div class="bg-cardBg border border-gray-800 rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-yellow-500/10 text-yellow-500 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Buy Me a Coffee</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6">Uluslararası kartlarla hızlıca kahve ısmarla, projelerime
+                        destek ol.</p>
+                </div>
+                <a href="https://buymeacoffee.com/KULLANICI_ADIN" target="_blank"
+                    class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-950 font-bold text-center py-3 rounded-xl transition flex items-center justify-center gap-2">
+                    Kahve Ismarla <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Papara / IBAN (Yerel Seçenek) -->
+            <div class="bg-cardBg border border-gray-800 rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Papara / IBAN</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Papara numaram veya IBAN adresim üzerinden doğrudan destekte
+                        bulunabilirsin.</p>
+                    <div class="bg-darkBg p-3 rounded-xl border border-gray-800 text-xs text-gray-300 font-mono mb-4">
+                        Papara No: 1234567890<br>
+                        IBAN: TR00 0000 0000 0000 0000 0000 00
+                    </div>
+                </div>
+                <button onclick="alert('Bilgiler kopyalandı!')"
+                    class="w-full bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium text-center py-3 rounded-xl transition flex items-center justify-center gap-2">
+                    <i class="fa-regular fa-copy"></i> Bilgileri Kopyala
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-800 mt-20 py-8 text-center text-sm text-gray-500">
+        <p>&copy; 2026 - Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+
+>>>>>>> 5ee81786857bc131c60c3de5bee7c46d1ba6504e
 </html>

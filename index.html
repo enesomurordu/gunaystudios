@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="tr" class="dark">
 
@@ -101,4 +102,109 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Arşivi & Portfolyo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#121212',
+                        cardBg: '#1e1e1e',
+                        accent: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-darkBg text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-xl font-bold tracking-tight text-white">
+                    <i class="fa-solid fa-code text-accent mr-2"></i>Portfolyo<span class="text-accent">.</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-accent font-medium transition">Ana Sayfa</a>
+                    <a href="projects.html" class="text-gray-400 hover:text-white transition">Uygulamalar</a>
+                    <a href="about.html" class="text-gray-400 hover:text-white transition">Hakkımda</a>
+                    <a href="donate.html"
+                        class="bg-accent/10 text-accent border border-accent/20 px-4 py-2 rounded-lg font-medium hover:bg-accent hover:text-white transition flex items-center gap-2">
+                        <i class="fa-solid fa-mug-hot"></i> Bağış Yap
+                    </a>
+                </div>
+                <!-- Mobil Menü Butonu -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-400 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobil Menü İçeriği -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 border-b border-gray-800 bg-cardBg">
+            <a href="index.html" class="block text-accent font-medium py-2">Ana Sayfa</a>
+            <a href="projects.html" class="block text-gray-400 hover:text-white py-2">Uygulamalar</a>
+            <a href="about.html" class="block text-gray-400 hover:text-white py-2">Hakkımda</a>
+            <a href="donate.html" class="block text-accent font-medium py-2">Bağış Yap</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 flex flex-col items-center text-center">
+        <span
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-gray-800 text-gray-300 mb-6 border border-gray-700">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Yeni projeler yayında
+        </span>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-3xl mb-6">
+            Geliştirdiğim Yazılımları ve <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Uygulamaları
+                Keşfet</span>
+        </h1>
+        <p class="text-lg text-gray-400 max-w-xl mb-10">
+            Masaüstü araçları, mobil uygulamalar ve web projeleri. Hepsi tek bir yerde, kolayca indirilebilir ve açık
+            kaynaklı.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+            <a href="projects.html"
+                class="bg-accent hover:bg-blue-600 text-white font-medium px-8 py-3 rounded-xl transition shadow-lg shadow-blue-500/20">
+                Uygulamaları İncele
+            </a>
+            <a href="donate.html"
+                class="bg-cardBg hover:bg-gray-800 text-gray-200 border border-gray-700 font-medium px-8 py-3 rounded-xl transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-heart text-red-500"></i> Destek Ol / Bağış
+            </a>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 mt-20 py-8 text-center text-sm text-gray-500">
+        <p>&copy; 2026 - Tüm hakları saklıdır. ❤️ ile geliştirilmiştir.</p>
+    </footer>
+
+    <script>
+        // Mobil menü açma/kapama scripti
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+>>>>>>> 5ee81786857bc131c60c3de5bee7c46d1ba6504e
 </html>
